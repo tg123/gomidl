@@ -78,7 +78,7 @@ func (f *mlex) Lex(lval *yySymType) int {
 		return 0
 	}
 
-	log.Println(f.s.LastToken())
+	// log.Println(f.s.LastToken())
 
 	t := f.s.LastToken().Type
 	parserType, ok := scannerToParserMap[t]
